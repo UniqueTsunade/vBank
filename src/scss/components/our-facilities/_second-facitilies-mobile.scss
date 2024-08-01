@@ -1,0 +1,38 @@
+
+.second-facitilies-mobile__point {
+    display: none;
+
+    @include tablet() {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.second-facitilies-mobile__block {
+    display: grid;
+    grid-template-columns: 3fr 0.2fr;
+    row-gap: 40px;
+    column-gap: 10px;
+    img {
+        justify-self: center;
+    }
+
+    .second-facitilies-mobile__title {
+        justify-self: center;
+        text-align: center;
+    }
+
+    .second-facitilies-mobile__number {
+        justify-self: end;
+    }
+}
+
+
+.second-facitilies-mobile__delimiter {
+    margin: 50px 0;
+    background-color: var(--greenColorBG);
+    width: 100%;
+    height: 1px;
+    opacity: 0.24; 
+}

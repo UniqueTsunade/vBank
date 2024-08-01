@@ -1,0 +1,53 @@
+.first-facitilies {
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--greenColorText);
+    column-gap: 21px;
+
+    @include tablet() {
+        display: none;
+    }
+}
+
+.first-facitilies__btn {
+    background-image: url("../../../assets/our-facilities/facilities-polygon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 170px;
+    height: 178px;
+    display: block;
+    align-self: center;
+}
+
+.first-facitilies__content {
+    width: clamp(13.938rem, 11.2rem + 13.69vw, 27.625rem);
+}
+
+.first-facitilies__number {
+    margin: 96px 0 249px 0;
+    letter-spacing: 0;
+
+    @include desktop() {
+        margin: 96px 0 200px 0;
+    }
+
+
+    @include tablet() {
+        margin: 96px 0 149px 0;
+    }
+
+    @include tablet() {
+        margin: 96px 0 149px 0;
+    }
+}
+
+
+
+.first-facitilies__text {
+    margin-top: 40px;
+    font-family: 'HelveticaRoman';
+    font-weight: 400;
+    line-height: calc(28 /18);
+}
+

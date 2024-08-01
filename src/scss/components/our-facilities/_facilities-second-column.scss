@@ -1,0 +1,17 @@
+.facilities-second-column {
+    align-self: flex-end;
+    
+    @include for-facilities() {
+        display: flex;
+        justify-content: end;
+    }
+}
+
+.facilities-second-column__text {
+    max-width: 350px;
+
+    font-family: 'HelveticaRoman';
+    font-weight: 400;
+    line-height: calc(28 / 18);
+
+}

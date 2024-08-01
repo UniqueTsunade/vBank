@@ -1,0 +1,13 @@
+.nav-list {
+    @include tablet () {
+        display: none;
+    }
+}
+
+.nav-list__links {
+    display: flex;
+    column-gap: 4vw;
+
+    font-size: 14px;
+    line-height: calc(20 / 14);
+}

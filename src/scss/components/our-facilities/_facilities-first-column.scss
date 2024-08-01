@@ -1,0 +1,22 @@
+.facilities-first-column {
+    @include for-facilities() {
+        display: flex;
+        justify-content: end;
+    }
+}
+
+.facilities-first-column__text {
+    margin-bottom: 342px;
+    font-family: "HelveticaRoman";
+    font-size: clamp(0.993rem, 0.61rem + 0.63vw, 1.525rem);
+    font-weight: 400;
+    line-height: calc(31 / 26);
+    color: var(--greenColorText);
+    text-transform: uppercase;
+
+    @include for-facilities() {
+        margin-bottom: 0px;
+    }
+} 
+
+

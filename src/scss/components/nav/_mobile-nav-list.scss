@@ -1,0 +1,26 @@
+
+.mobile-nav-list__item  {
+    font-size: 30px;
+    text-transform: uppercase;
+    // padding: 0 45px;
+
+    &:not(:last-of-type) {
+        margin-bottom: 40px;
+    }
+
+    
+    &:last-of-type {
+        margin-bottom: 119px;
+    }
+
+    @include mini-mobile() {
+        padding: 0 35px;
+    }
+}
+
+.mobile-nav-list__item-centred {
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+}
+

@@ -1,0 +1,49 @@
+.custom-btn {
+    position: relative;
+    background-image: url("./../assets/icons/about-us-btn.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 196px;
+    height: 204px;
+    left: 29px;
+    display: block;
+    padding: 52px 60px 92px 70px;
+    margin-top: 18vh;
+
+    @include desktop() {
+        width: 150px;
+        height: 157px;
+        padding: 38px 26px 69px 50px;
+        margin-top: 19vh;
+    }
+
+    @include tablet() {
+        display: none;
+    }
+}
+
+
+.custom-btn__text {
+    margin-bottom: 35px;
+    max-width: 72px;
+    font-family: 'HelveticaRoman';
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: calc(17 / 14);
+
+    .center {
+        text-align: center;
+    }
+
+    @include desktop() {
+        margin-bottom: 22px;
+    }
+}
+
+.custom-btn__polygon {
+    display: block;
+    text-align: center;
+}
+
+

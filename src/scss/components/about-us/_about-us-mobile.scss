@@ -1,0 +1,72 @@
+.about-us-mobile {
+
+    position: relative;
+    z-index: 1;
+
+    font-weight: 400;
+
+
+}
+
+.about-us-mobile__content {
+    display: none;
+    padding: 50px 0 70px 0;
+
+    @include tablet() {
+        display: flex;
+        flex-direction: column;
+        row-gap: 70px;
+    }
+}
+
+.about-us-mobile__left-img {
+    img {
+        width: 100%;
+    }
+}
+
+.about-us-mobile__text {
+    position: relative;
+    max-width: 78.13vw;
+    color: var(--whiteColorText);
+}
+
+.about-us-mobile__title {
+    text-align: end;
+    align-self: flex-start;
+
+    span {
+        color: var(--accentYellow) !important;
+    }
+
+    
+}
+
+
+.about-us-mobile__subtitle {
+    margin-bottom: 20px;
+    font-family: "Miracle";
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--whiteColorText);
+    text-transform: capitalize;
+
+}
+
+.about-us-mobile__description {
+    font-family: 'HelveticaRoman';
+    font-size: 13px;
+    line-height: 23px;
+    color: var(--whiteColorText);
+
+}
+
+.about-us-mobile__text-icon {
+    width: 85.1px;
+    rotate: 80deg;
+    position: absolute;
+    top: -3vh;
+    right: -14vw;
+}
+

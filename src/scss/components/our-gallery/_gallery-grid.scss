@@ -1,0 +1,103 @@
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    column-gap: clamp(7.25rem, 2.179rem + 7.92vw, 11.688rem);
+
+    @include tablet() {
+        display: none;
+    }
+}
+
+.gallery-grid__first-row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallery-grid__subtitle {
+    margin: 23px 0 273px;
+    font-family: "HelveticaRoman";
+    font-size: clamp(1.125rem, 0.554rem + 0.89vw, 1.625rem);
+    font-weight: 400;
+    line-height: calc(31 / 26);
+    text-transform: uppercase;   
+}
+
+.gallery-grid__couch-img {
+    top: 341px;
+    left: -40px;
+    position: absolute;
+    min-width: 140px;
+}
+
+.allery-grid__tv-img {
+    min-width: 126px;
+}
+
+.gallery-grid__second-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-grid__label {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.gallery-grid__flower-icon {
+    position: absolute;
+    top: 50px;
+    left: 55px;
+}
+
+.gallery-grid__title {
+    margin-bottom: clamp(3.125rem, 1.696rem + 2.23vw, 4.375rem);
+}
+
+.gallery-grid__description {
+    margin-bottom: clamp(4.375rem, -1.339rem + 8.93vw, 9.375rem);
+    max-width: 450px;
+    font-family: "HelveticaRoman";
+    font-size: clamp(0.813rem, 0.455rem + 0.56vw, 1.125rem);
+    font-weight: 400;
+    line-height: calc(28 / 18);
+    text-align: center;
+    color: var(--whiteColorText);
+}
+
+.gallery-grid__fireplace-img {
+    margin-bottom: clamp(3.125rem, -0.446rem + 5.58vw, 6.25rem);
+    max-width: 47.71vw;
+}
+
+.gallery-grid__recommendation {
+    display: flex;
+    align-self: start;
+    align-items: center;
+    column-gap: clamp(1rem, 1.56vw, 1.875rem);
+    p {
+        max-width: 350px;
+        font-family: "HelveticaRoman";
+        font-size: clamp(1rem, 0.571rem + 0.67vw, 1.375rem);
+        font-style: italic;
+        font-weight: 400;
+        line-height: calc(26 / 22);
+        color: var(--whiteColorText);
+        text-transform: capitalize;
+    }
+
+}
+
+.gallery-grid__third-row {
+    position: relative;
+}
+
+.gallery-grid__restaurant {
+    position: absolute;
+    right: -40px;
+    margin-top: 296px;
+    max-width: 16.20vw;
+}
+

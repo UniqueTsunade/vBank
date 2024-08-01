@@ -1,0 +1,72 @@
+/* Fonts */
+@font-face {
+    font-family: 'HelveticaMedium';
+    src: url('../../fonts/HelveticaMedium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'HelveticaRoman';
+    src: url('../../fonts/HelveticaRoman.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Miracle';
+    src: url('../../fonts/Miracle.otf') format('opentype');
+}
+
+/* Colors and styling */
+
+:root {
+    --whiteColorText: #FFFCF6;
+    --greenColorBG: #313F38;
+    --accentYellow: #FCD043;
+    --greenColorElems: #3F5148;
+    --greenColorText: #1B3B36;
+
+    --whiteColorBG: #FFFCF6;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    font-size: 18px;
+    background-color: var(--whiteColorBG);
+    font-family: 'HelveticaRoman';
+}
+
+.none {
+	display: none !important;
+}
+
+.active {
+    display: block !important;
+}
+
+.container {
+    padding: 0 clamp(1rem, -0.145rem + 1.79vw, 2rem);
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    } 
+}
+
+.green {
+    background-color: var(--greenColorBG);
+}
+
+.white {
+    color: var(--whiteColorText);
+}
+
+.yellow {
+    color: var(--accentYellow);
+}
+
+.title {
+    font-family: 'Miracle';
+    font-size: clamp(2.75rem, 2.385rem + 4.5vw, 9.375rem);
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+

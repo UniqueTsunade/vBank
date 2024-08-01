@@ -1,0 +1,21 @@
+.custom-slider-btn {
+    position: relative;
+    background-image: url("../../../assets/slider/slider-btn.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 180px;
+    height: 172px;
+    display: block;
+}
+
+.custom-slider-next {
+    position: absolute;
+    top: 69px;
+    left: 65px;
+
+    @include tablet() {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}

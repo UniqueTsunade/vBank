@@ -1,0 +1,46 @@
+.decorative-lines-mobile {
+    display: none;
+
+    @include tablet() {
+        display: block;
+    }
+}
+
+#top-line-mobile {
+    position: absolute;
+    z-index: -3;
+    top: 0;
+    right: 0;
+    background-color: var(--greenColorElems);
+    display: block;
+    width: 66vw;
+    height: 1px;
+}
+
+#vertical-line-mobile {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 73.84vw;
+    background-color: var(--greenColorElems);
+    display: block;
+    width: 1px; 
+    height: 50%;
+    transform: rotate(0deg);
+
+}
+
+
+#line-arch-mobile {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: -14vw;
+    width: 93.6vw;
+    height: 70vh;
+    border: 1px solid var(--greenColorElems);
+    border-radius: 100%; 
+    clip-path: polygon(0 0, 100% 0, 100% 24.8%, 0% 50%);
+
+}
+

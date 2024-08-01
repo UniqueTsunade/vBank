@@ -1,0 +1,64 @@
+.customInput {
+    position: relative;
+}
+
+.customInput--check-in {
+    z-index: 3;
+    &::after {
+        content: "";
+        z-index: 4;
+        position: absolute;
+        width: 1px;
+        height: 64px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 370px;
+        background: rgba(255, 252, 246, 1);
+        opacity: 0.24;
+
+        @include desktop() {
+            left: 248px;
+        }
+    }
+}
+
+.customDatePicker{
+    position: relative;
+    width: 370px;
+    height: 150px;
+    background: rgba(49, 63, 56, 0.48);
+    backdrop-filter: blur(4px);
+
+    @include desktop() {
+        max-width: 248px;
+        height: 100px;
+    }
+
+}
+
+#customInput__img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 48px;
+    cursor: pointer;
+}
+
+.react-datepicker-wrapper .react-datepicker__input-container input {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    color: var(--whiteColorText) !important;
+
+    @include desktop() {
+    }
+  }
+
+  .customDatePicker::placeholder {
+    font-family: 'HelveticaRoman';
+    color: var(--whiteColorText);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}

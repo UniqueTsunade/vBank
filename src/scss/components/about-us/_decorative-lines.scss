@@ -1,0 +1,58 @@
+.decorative-lines {
+    @include tablet() {
+        display: none;
+    }
+}
+
+#top-line {
+    position: absolute;
+    z-index: -3;
+    top: 0;
+    right: 0;
+    background-color: var(--greenColorElems);
+    display: block;
+    width: 62vw;
+    height: 1px;
+}
+
+#vertical-line {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 73.84vw;
+    background-color: var(--greenColorElems);
+    display: block;
+    width: 1px; 
+    height: 100%;
+    transform: rotate(0deg);
+
+    @include desktop() {
+        left: 77.85vw;
+    }
+}
+
+
+#line-arch {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 1px;
+    width: 73.9vw;
+    height: 147vh;
+    border: 1px solid var(--greenColorElems);
+    border-radius: 100%; 
+    clip-path: polygon(0 0, 100% 0, 100% 47.8%, 0% 50%);
+
+    @include desktop() {
+        width: 77.9vw;
+        height: 110vh;
+        clip-path: polygon(0 0, 109% 0, 100% 52.3%, 0% 50%);
+    }
+
+    @include tablet() {
+        width: 79.9vw;
+        height: 126vh;
+        clip-path: polygon(0 0, 106% 0, 100% 34%, 0% 50%);
+    }
+}
+

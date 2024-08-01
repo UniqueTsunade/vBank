@@ -1,0 +1,91 @@
+.best-apartments {
+    position: relative;
+    background-image: url("./../assets/best-apartments/best-apartments.jpg");
+    background-image: -webkit-image-set(
+        url("./../assets/best-apartments/best-apartments.jpg") 1x, 
+        url("./../assets/best-apartments/best-apartments@2x.jpg") 2x);
+    background-image: image-set(
+        url("./../assets/best-apartments/best-apartments.jpg") 1x, 
+        url("./../assets/best-apartments/best-apartments@2x.jpg") 2x);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% center;
+    aspect-ratio: 19 / 10;
+    height: 100%;
+    width: 100%;
+
+    @include tablet() {
+        background-image: url("./../assets/best-apartments/best-apartments-mobile.jpg");
+        background-image: -webkit-image-set(
+            url("./../assets/best-apartments/best-apartments-mobile.jpg") 1x, 
+            url("./../assets/best-apartments/best-apartments-mobile@2x.jpg") 2x);
+        background-image: image-set(
+            url("./../assets/best-apartments/best-apartments-mobile.jpg") 1x, 
+            url("./../assets/best-apartments/best-apartments-mobile@2x.jpg") 2x);
+
+        aspect-ratio: 4 / 9;
+    }
+}
+
+.best-apartments__title {
+    position: relative;
+    padding-top: clamp(4.625rem, 2.768rem + 2.9vw, 6.25rem);
+
+    @include tablet() {
+        top: 20%;
+        font-size: 53px;
+        font-size: clamp(2.113rem, 2.098rem + 1.9vw, 4.375rem);
+    }
+}
+
+.best-apartments__text {
+    position: absolute;
+    top: 50%;
+    max-width: clamp(13.063rem, 10.675rem + 11.94vw, 25rem);
+    font-family: 'HelveticaRoman';
+    font-size: clamp(1.125rem, 0.554rem + 0.89vw, 1.625rem);
+    font-weight: 400;
+    line-height: calc(31 / 26);
+    text-transform: uppercase;
+
+    @include tablet() {
+        position: relative;
+        padding-top: 172%;
+        margin-left: auto;
+    }
+
+    @include tablet-mini() {
+        padding-top: 165%;
+    }
+
+    @include for-slide () {
+        padding-top: 156%;
+    }
+
+    @include mobile() {
+        padding-top: 150%;
+        padding-bottom: 3%;
+    }
+}
+
+.best-apartments__line {
+    position: static;
+    bottom: 188px;
+
+    @include tablet() {
+        position: absolute;
+        bottom: 90vh;
+    }
+
+    @include for-facilities() {
+        bottom: 70vh;
+    }
+
+    @include tablet-mini() {
+        bottom: 53vh;
+    }
+
+    @include for-slide() {
+        bottom: 37vh;
+    }
+}

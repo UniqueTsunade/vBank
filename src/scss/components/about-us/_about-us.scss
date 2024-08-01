@@ -1,0 +1,127 @@
+.about-us {
+    position: relative;
+    z-index: 1;
+
+    font-weight: 400;
+
+    @include tablet() {
+        display: none;
+    }
+}
+
+.about-us__content {
+    padding: 150px 0 300px 0;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+
+    @include tablet() {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.about-us__left-img {
+    img {
+        position: absolute;
+        z-index: 1;
+        width: clamp(20rem, 14.118rem + 14.3vw, 31.875rem);
+
+        @include tablet() {
+            position: relative;
+        }
+    }
+}
+
+.about-us__text {
+    position: relative;
+    z-index: 2;
+    margin: 160px 273px 0 clamp(-9.375rem, -14.396rem + 21.42vw, 11.313rem);
+    .title {
+        text-align: end;
+        margin-bottom: 189px;
+
+        @include desktop() {
+            margin-bottom: 126px;
+        }
+    } 
+
+    @include tablet() {
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+
+}
+
+.about-us__title {
+    @include tablet() {
+        span {
+            color: var(--accentYellow) !important;
+        }
+    }
+
+    
+}
+
+
+.about-us__text-wrapper {
+    position: absolute;
+    left: 189px;
+}
+
+.about-us__subtitle {
+    margin-bottom: clamp(1.25rem, 0.931rem + 1.36vw, 2.563rem);
+    font-family: "Miracle";
+    font-size: clamp(1.875rem, 1.572rem + 1.29vw, 3.125rem);
+    line-height: calc(clamp(1.875rem, 1.42rem + 1.94vw, 3.75rem) / clamp(1.875rem, 1.572rem + 1.29vw, 3.125rem));
+    letter-spacing: 0.03em;
+    color: var(--whiteColorText);
+    text-transform: capitalize;
+
+    @include desktop() {
+        margin-left: 30px;
+    }
+}
+
+.about-us__description {
+    width: clamp(18.313rem, 16.796rem + 6.84vw, 25rem);
+    font-family: 'HelveticaRoman';
+    font-size: clamp(0.813rem, 0.737rem + 0.32vw, 1.125rem);
+    line-height: calc(clamp(1.438rem, 1.362rem + 0.32vw, 1.75rem) /clamp(0.813rem, 0.737rem + 0.32vw, 1.125rem));
+    color: var(--whiteColorText);
+
+    @include desktop() {
+        margin-left: 30px;
+    }
+}
+
+.about-us__right-img {
+    position: relative;
+    width: clamp(9.375rem, 3.403rem + 9.71vw, 17.5rem);
+}
+
+.about-us__second-img {
+    width: 100%;
+    margin-bottom: 200px;
+
+    @include desktop() {
+        margin-bottom: 151px;
+    }
+
+    @include tablet() {
+        display: none;
+    }
+}
+
+.about-us__text-icon {
+    width: clamp(3.125rem, 2.579rem + 2.33vw, 5.375rem);
+
+    position: absolute;
+    top: -9%;
+    left: -29%;
+
+    @include tablet() {
+        display: none;
+    }
+}
+

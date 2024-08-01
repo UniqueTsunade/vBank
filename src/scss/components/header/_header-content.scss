@@ -1,0 +1,124 @@
+.header-content {
+    position: relative;
+    z-index: 1;
+
+    font-family: 'HelveticaRoman';
+    margin-bottom: clamp(2.188rem, 1.381rem + 3.8vw, 5.938rem);
+    display: grid;
+    grid-template-columns: [start] clamp(22.188rem, 12.767rem + 40.19vw, 61rem) [line2] clamp(8.375rem, 6.145rem + 9.51vw, 17.563rem) [line3] auto [end];
+    justify-content: space-between;
+    align-items: start;
+
+    @include tablet() {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+.header-content__left-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(1.5rem, 0.939rem + 2.39vw, 3.813rem);
+    
+}
+
+.header-content__title {
+    display: inline-flex;
+    column-gap: clamp(0.438rem, 0.255rem + 0.78vw, 1.188rem);
+    font-size: clamp(5rem, 2.876rem + 9.06vw, 13.75rem);
+    line-height: clamp(6.063rem, 4.5rem + 6.67vw, 12.5rem);
+
+    @include tablet() {
+        font-size: clamp(3.75rem, 3.321rem + 2.29vw, 4.75rem);
+    }
+
+}
+
+
+.header-content__points {
+    word-break: keep-all;
+    font-size: clamp(0.75rem, 0.538rem + 0.91vw, 1.625rem);
+    font-weight: 400;
+    color: var(--accentYellow);
+
+    @include tablet() {
+        align-self: center;
+        margin-bottom: 24px;
+    }
+}
+
+.header-content__tablet-delimiter {
+    display: none;
+
+    @include tablet {
+        display: block;
+        width: 173px;
+        height: 1px;
+        background-color: var(--whiteColorBG);
+        opacity: 0.12;
+        margin-bottom: 24px;
+    }
+
+}
+
+.header-content__right-section {
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 96px;
+
+    h4 {
+        font-weight: 400;
+        line-height: calc(28 / 18);
+        color: var(--whiteColorText);
+    }
+
+    @include desktop() {
+        display: none;
+    }
+
+    &--desktop {
+        display: none;
+
+        @include desktop() {
+            margin-top: 31px;
+            display: block;
+            max-width: 200px;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: calc(23 / 13);
+            color: var(--whiteColorText);
+
+            @include tablet() {
+                display: none;
+
+            }
+        }
+    }
+
+    &--tablet {
+        display: none;
+
+        @include tablet() {
+            display: inline;
+            margin-bottom: 40px;
+            text-align: center;
+            max-width: 291px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: calc(23 / 14);
+            color: var(--whiteColorText);
+    }
+}
+}
+
+.header-content__btn--desktop {
+    justify-self: center;
+    margin-top: 31px;
+
+    @include tablet() {
+        display: none;
+    }
+}
+
+

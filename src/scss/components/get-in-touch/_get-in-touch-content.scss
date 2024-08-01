@@ -1,0 +1,38 @@
+.get-in-touch-content__first-row {
+    display: flex;
+    margin-bottom: 50px;
+
+    @include tablet() {
+        justify-content: center;
+    }
+
+    img {
+        width: clamp(2.25rem, 0.825rem + 7.12vw, 9.375rem);
+    }
+}
+
+.get-in-touch__title {
+    font-family: "Miracle";
+    font-size: clamp(4.65rem, 1.55rem + 13.5vw, 18.75rem);
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+
+    &--green {
+        color: var(--greenColorText);
+        display: flex;
+        align-items: center;
+    }
+
+    &--yellow {
+        color: var(--accentYellow);
+        display: flex;
+        justify-content: end;
+
+        @include tablet() {
+            justify-content: center;
+        }
+    }
+
+
+}

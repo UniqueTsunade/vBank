@@ -1,0 +1,30 @@
+.second-facitilies__point {
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    align-items: center;
+    
+    @include tablet() {
+        display: none;
+    }
+}
+
+.second-facitilies__number {
+    justify-self: center;
+    letter-spacing: 0;
+}
+
+.second-facitilies__btn {
+    justify-self: center;
+}
+
+.second-facitilies__delimiter {
+    position: absolute;
+    background-color: var(--greenColorBG);
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    opacity: 0.24; 
+}

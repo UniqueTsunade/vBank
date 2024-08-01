@@ -1,0 +1,55 @@
+@import "./base/reset";
+@import "./base/mixin";
+@import "./base/base";
+
+
+
+@import "./components/nav/navbar";
+@import "./components/nav/nav-list";
+@import "./components/nav/mobile-menu";
+@import "./components/nav/mobile-nav-list";
+
+@import "./components/header/foundation";
+@import "./components/header/header-content";
+@import "./components/header/header-form";
+@import "./components/header/custom-input";
+@import "./components/header/header-links";
+@import "./components/header/book-room-sticker";
+
+@import "./components/about-us/about-us";
+@import "./components/about-us/about-us-mobile";
+@import "./components/about-us/decorative-lines";
+@import "./components/about-us/decorative-lines-mobile";
+@import "./components/about-us/custom-btn";
+
+@import "./components/rooms/rooms";
+@import "./components/rooms/room-slider";
+@import "./components/rooms/slide";
+@import "./components/rooms/slide-mobile";
+@import "./components/rooms/сustom-pagination";
+@import "./components/rooms/custom-slider-btn";
+
+@import "./components/our-facilities/our-facilities";
+@import "./components/our-facilities/facilities-first-column";
+@import "./components/our-facilities/facilities-title";
+@import "./components/our-facilities/facilities-second-column";
+@import "./components/our-facilities/facilities-third-column";
+@import "./components/our-facilities/first-facilities";
+@import "./components/our-facilities/first-facilities-mobile";
+@import "./components/our-facilities/second-facitilies";
+@import "./components/our-facilities/second-facitilies-mobile";
+
+@import "./components/best-apartments/best-apartments";
+
+@import "./components/our-gallery/our-gallery";
+@import "./components/our-gallery/gallery-grid";
+@import "./components/our-gallery/gallery-grid-mobile";
+@import "./components/our-gallery/gallery-footer";
+
+@import "./components/get-in-touch/get-in-touch";
+@import "./components/get-in-touch/get-in-touch-content";
+@import "./components/get-in-touch/find-room";
+@import "./components/get-in-touch/find-room-form";
+
+@import "./components/footer/footer";
+@import "./components/footer/footer-grid";

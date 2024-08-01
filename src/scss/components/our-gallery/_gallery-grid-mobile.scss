@@ -1,0 +1,70 @@
+.gallery-grid-mobile {
+    display: none;
+
+    @include tablet() {
+        display: block;
+    }
+}
+
+.gallery-grid-mobile__first-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-grid-mobile__label {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.gallery-grid-mobile__flower-icon {
+    position: absolute;
+    top: 50px;
+    left: 55px;
+} 
+
+.gallery-grid-mobile__title {
+    text-align: center;
+}
+
+.gallery-grid-mobile__second-row {
+    position: relative;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.gallery-grid-mobile__restaurant {
+    align-self: flex-end;
+    opacity: 0.3;
+}
+
+.gallery-grid-mobile__fireplace-img {
+    align-self: flex-start;
+    opacity: 0.3;
+}
+
+.gallery-grid-mobile__third-row {
+    position: absolute;
+    top: -6%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    @include for-slide() {
+        top: -8%;
+    }
+}
+
+.gallery-footer-mobile__bathroom-img {
+    width: 55%;
+    align-self: flex-end;
+}
+
+.gallery-grid-mobile__tv-img {
+    width: 50%;
+    align-self: center;
+}
+

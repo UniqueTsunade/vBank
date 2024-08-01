@@ -1,0 +1,25 @@
+.facilities-title {
+    text-transform: uppercase;
+    div:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    justify-self: center;
+}
+
+.facilities-title__last-string {
+    display: flex;
+    column-gap: 92px;
+
+    @include desktop() {
+        column-gap: 10px;
+    }
+}
+
+.facilities-title__img {
+    padding-left: 131px;
+
+    @include tablet() {
+        padding-left: 0;
+    }
+}

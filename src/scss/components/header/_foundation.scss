@@ -1,0 +1,20 @@
+.foundation {
+    width: 249px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    column-gap: 23px;
+    padding: 25px 50px 19px 30px;
+    border: 1px solid rgba(255, 252, 246, 0.32);
+    border-radius: 30px;
+
+    p {
+        font-size: 21px;
+        font-weight: 400;
+        line-height: calc(26.4 / 21);
+        color: var(--whiteColorText);
+
+    }
+
+}
+

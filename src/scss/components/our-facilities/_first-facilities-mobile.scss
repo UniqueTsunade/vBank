@@ -1,0 +1,60 @@
+.first-facitilies-mobile {
+    display: none;
+
+    @include tablet() {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+}
+
+.first-facitilies-mobile__btn {
+    background-image: url("../../../assets/our-facilities/facilities-polygon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    text-align: left;
+}
+
+.first-facitilies-mobile__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 20px;
+    justify-content: start;
+    align-items: start;
+
+    .first-facitilies-mobile__number {
+        justify-self: center;   
+
+        @include mobile() {
+            justify-self: start;
+        }
+    }
+
+    .first-facitilies-mobile__btn {
+        justify-self: center;
+
+        @include mobile() {
+            justify-self: start;
+        }
+
+    }
+
+}
+
+.first-facitilies-mobile__title {
+    max-width: 223px;
+}
+
+.first-facitilies-mobile__text {
+    font-family: 'HelveticaRoman';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: calc(28 /18);
+    max-width: 223px;
+}
+
+.first-facitilies-mobile__img {
+    align-self: center;
+    margin-bottom: 50px;
+}

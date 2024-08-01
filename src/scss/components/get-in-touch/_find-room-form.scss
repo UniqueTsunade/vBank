@@ -1,0 +1,81 @@
+.find-room-from {
+    position: relative;
+    z-index: 1;
+
+    form {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        display: flex;
+        font-family: 'HelveticaRoman';
+        border: 1px solid var(--greenColorBG);
+    }
+}
+
+
+.find-room-from__input {
+    position: relative;
+    
+    &--check-in {
+    z-index: 3;
+        &::after {
+            content: "";
+            z-index: 4;
+            position: absolute;
+            width: 1px;
+            height: 64px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 314px;
+            background: rgba(49, 63, 56, 1);
+            opacity: 0.24;
+        }
+    }
+}
+
+.find-room-from__date-picker{
+    position: relative;
+    width: 314px;
+    height: 140px;
+    background: transparent;
+    text-transform: uppercase;
+    font-family: "HelveticaRoman";
+
+    
+}
+
+#customInput__img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 48px;
+    cursor: pointer;
+}
+
+.react-datepicker-wrapper {
+    .react-datepicker__input-container {
+        input {
+            text-align: left;
+            padding-left: 40px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            color: var(--greenColorText);
+          }
+    }
+} 
+
+  .find-room-from__btn {
+    width: 285px;
+    height: 140px;
+    padding: 61px 66px;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--greenColorBG);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: calc(20 / 18);
+    text-transform: uppercase;
+    color: var(--whiteColorText);
+}

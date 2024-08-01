@@ -1,0 +1,57 @@
+.gallery-footer {
+    position: relative;
+    z-index: 1;
+    margin-top: 8px;
+
+    @include tablet() {
+        display: none;
+    }
+
+}
+
+.gallery-footer__wrapper {
+    position: absolute;
+    z-index: 1;
+    font-family: "Miracle";
+    font-size: clamp(3.75rem, -0.536rem + 6.7vw, 7.5rem);
+    font-weight: 400;
+    line-height: calc(140 / 120);
+    top: 5vh;
+    left: 0;
+    white-space: nowrap; 
+    overflow: hidden; 
+
+    p{
+        width: 100%;
+        overflow: visible; 
+        color: rgba(255, 252, 246, 0.12);
+    }
+
+
+}
+
+.gallery-footer__first-text {
+    position: relative;
+    left: -3.9%; 
+
+    span {
+        color: var(--whiteColorText);
+    }
+}
+
+.gallery-footer__second-text {
+    position: relative; 
+    left: -0.8%; 
+}
+
+  
+
+.gallery-footer__bathroom-img{
+    position: relative;
+    z-index: 3;
+    padding: 0 clamp(1rem, -0.145rem + 1.79vw, 2rem) 0 0;
+    display: block;
+    margin-left: auto;
+    max-width: 23.07vw;
+    max-height: 284px;
+}

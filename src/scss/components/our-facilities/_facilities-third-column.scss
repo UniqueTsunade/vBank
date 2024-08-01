@@ -1,0 +1,25 @@
+.facilities-third-column {
+    position: relative;
+}
+
+.facilities-third-column {
+    justify-self: end;
+}
+
+.facilities-third-column__label {
+    position: absolute;
+    max-width: 190px;
+    max-height: 190px;
+    top: -14%;
+    right: 80%;
+
+    @include desktop() {
+        display: none;
+    }
+}
+
+.facilities-third-column__img {
+    @include tablet() {
+        display: none;
+    }
+}
